@@ -1,0 +1,163 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background: linear-gradient(to right, green, blue);
+}
+.main-container{
+  width:90vw;
+  height:auto;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items:flex-start;
+
+}
+.main-header{
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: none;
+  color:aqua;
+  position: relative;
+ 
+}
+.to-do-container{
+  width:60vw;
+  height:auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:hsl(192, 26%, 96%);
+}
+/*.leaderboard{
+  border:2px solid grey;
+  border-radius: 10px;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+.task-generator{
+  border: 2px solid grey;
+  padding:20px;
+  margin:0px;
+  border-radius:10px;
+}
+.input-task{
+  font-size:1.5rem;
+  display:inline-flex;
+  width: 80%;
+}
+.submit-task{
+  display:inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size: 1.1rem;
+  background-color: hsl(120, 100%, 25%);
+
+}
+.submit-task:hover {
+  transform: scale(1.1);
+  background-color: hsl(120, 100%, 20%);
+}
+.flex-row{
+  display:flex;
+  flex-direction: row;
+}
+.margin-5px{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+ol {
+  list-style-type: decimal; /* Upewnia się, że lista jest numerowana */
+  padding-left: 20px; /* Dodatkowe odstępy, jeśli numeracja jest niewidoczna */
+  margin-left: 0px;
+}
+
+.task-on-list{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2rem;
+  display:flex;
+  align-items: center;
+  gap: 10px; /* Dodaje odstęp między tekstem a przyciskami */
+  position:relative;
+  flex-direction:row;
+  background-color: #242424;
+  margin-left: 5px;
+  padding: 5px;
+  margin:10px;
+}
+
+.edit-task {
+  font-size: 2rem;
+  padding: 5px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: transparent; /* Aby nie zmieniać koloru */
+  color: aqua; /* Dopasowanie do stylu */
+  outline: none;
+}
+
+.remove-task{
+  display:inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size: 1.1rem;
+  background-color: hsl(3, 92%, 42%);
+  border:none;
+  padding:5px;
+  margin:10px;
+}
+.remove-task:hover{
+  transform: scale(1.1);
+  background-color: hsl(3, 92%, 37%);
+}
+
+.move-task-up{
+  display:inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size: 1.1rem;
+  background-color: hsl(189, 80%, 45%);
+  border:none;
+  padding:5px;
+  margin:10px;
+}
+.move-task-up:hover{
+  transform: scale(1.1);
+  background-color: hsl(189, 80%, 40%);
+}
+
+.move-task-down{
+  display:inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size: 1.1rem;
+  background-color: hsl(235, 92%, 42%);
+  border:none;
+  padding:5px;
+  margin:10px;
+}
+.move-task-down:hover{
+  transform: scale(1.1);
+  background-color: hsl(235, 92%, 37%);
+}
+
